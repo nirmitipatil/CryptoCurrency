@@ -4,18 +4,29 @@ This project asks you to build a decentralized application for a Dutch Auction
 
 # Reading
 Ethereum smart contract security. Note that your score on the homework will be reduced if you submit insecure code. 
+
 Hardhat. Go through their tutorials.
+
 Solidity test coverage reporting. You must generate coverage reports for your tests.
+
 Dutch auctions 
+
 BasicDutchAuction.sol: an incomplete, skeletal implementation of a Dutch auction that you’ll use for v1.0
+
 Dutch Auction sample tests: Read through these old tests for the Du2tchAuction contract. You may use them to check your implementation, but you’ll likely need to rewrite them to work with hardhat. They were previously written for truffle.
+
 ERC721 EIP: https://eips.ethereum.org/EIPS/eip-721
+
 ERC20 EIP: https://eips.ethereum.org/EIPS/eip-20
+
 OpenZeppellin contracts
 Use the ERC20, ERC721, and upgrade proxy from OpenZeppellin. Do not implement your own.
+
 ReactJS: ReactJs is a large framework: you probably only need to know <5% of the framework to successfully do this assignment. Use Typescript instead of Javascript as much as you can. It will make development easier as your app gets more complicated.
+
 Metamask
-IPFS
+
+IPFS:- https://docs.ipfs.tech/
 
 # Version 1.0
 
