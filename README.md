@@ -19,12 +19,13 @@ ERC721 EIP: https://eips.ethereum.org/EIPS/eip-721
 
 ERC20 EIP: https://eips.ethereum.org/EIPS/eip-20
 
-OpenZeppellin contracts
+OpenZeppellin contracts https://docs.openzeppelin.com/
 Use the ERC20, ERC721, and upgrade proxy from OpenZeppellin. Do not implement your own.
 
 ReactJS: ReactJs is a large framework: you probably only need to know <5% of the framework to successfully do this assignment. Use Typescript instead of Javascript as much as you can. It will make development easier as your app gets more complicated.
+https://reactjs.org/
 
-Metamask
+Metamask:- https://metamask.io/
 
 IPFS:- https://docs.ipfs.tech/
 
