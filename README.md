@@ -2,7 +2,7 @@
 Project: Dutch Auction
 This project asks you to build a decentralized application for a Dutch Auction
 
-Reading
+# Reading
 Ethereum smart contract security. Note that your score on the homework will be reduced if you submit insecure code. 
 Hardhat. Go through their tutorials.
 Solidity test coverage reporting. You must generate coverage reports for your tests.
@@ -16,7 +16,8 @@ Use the ERC20, ERC721, and upgrade proxy from OpenZeppellin. Do not implement yo
 ReactJS: ReactJs is a large framework: you probably only need to know <5% of the framework to successfully do this assignment. Use Typescript instead of Javascript as much as you can. It will make development easier as your app gets more complicated.
 Metamask
 IPFS
-Version 1.0
+
+# Version 1.0
 
 Create a new directory in your Github repo called v1.0 and initialize a new hardhat project.
 Create a new contract called BasicDutchAuction.sol that implements a Dutch auction called as described below.
@@ -32,7 +33,8 @@ The auction begins at the block in which the contract is created.
 The initial price of the item is derived from reservePrice, numBlocksAuctionOpen, and  offerPriceDecrement: initialPrice = reservePrice + numBlocksAuctionOpen*offerPriceDecrement 
 A bid can be submitted by either an externally-owned account or a contract account.
 The first bid processed by the contract that sends wei greater than or equal to the current price is the  winner. The wei should be transferred immediately to the seller and the contract should not accept  any more bids. All bids besides the winning bid should be refunded immediately. 
-Version 2.0
+
+#Version 2.0
 Read the ERC721 EIP and OpenZeppellin implementation.
 Create a new directory in your Github repo called v2.0 and initialize a new hardhat project.
 Copy over any files you can reuse from the previous versions of this project into the directory for this version.
@@ -42,23 +44,25 @@ Create a new contract called NFTDutchAuction.sol. It should have the same functi
 constructor(address erc721TokenAddress, uint256 _nftTokenId, uint256 _reservePrice, uint256 _numBlocksAuctionOpen, uint256 _offerPriceDecrement)
 Write test cases to thoroughly test your contracts. Generate a Solidity coverage report and commit it to your repository under this version’s directory.
 
-Version 3.0
+# Version 3.0
 Create a new directory in your Github repo called v3.0 and initialize a new hardhat project.
 Copy over any files you can reuse from the previous versions of this project into the directory for this version.
 Create a new contract called NFTDutchAuction_ERC20Bids.sol. It should have the same functionality as NFTDutchAuction.sol but accepts only ERC20 bids instead of Ether. 
 The constructor for the NFTDutchAuction_ERC20Bids.sol should be: constructor(address erc20TokenAddress, address erc721TokenAddress, uint256 _nftTokenId, uint256 _reservePrice, uint256 _numBlocksAuctionOpen, uint256 _offerPriceDecrement)
 Write test cases to thoroughly test your contracts. Generate a Solidity coverage report and commit it to your repository under this version’s directory.
 
-Version 4.0
+# Version 4.0
 Add an upgrade proxy to make your NFTDutchAuction_ERC20Bids.sol upgradeable. You don’t need to make the NFT or ERC20 contracts upgradeable. Just the DutchAuction contract.
 Read the documentation on upgradeable contracts
 Use the UUPS proxy instead of a transparent proxy: https://docs.openzeppelin.com/contracts/4.x/api/proxy
-Version 5.0
+
+# Version 5.0
 Read https://eips.ethereum.org/EIPS/eip-2612.
 Read https://eips.ethereum.org/EIPS/eip-712
 Add ERC20Permit functionality to your ERC20 implementation. See Openzeppellin’s implementation.
 Write test cases to cover the permit functionality in the context of submitting a bid to your NFTDutchAuction_ERC20Bids.
-Version 6.0
+
+# Version 6.0
 Create a new directory in your Github repo called v6.0 and initialize a new hardhat project.
 Implement a ReactJS user interface for your BasicDutchAuction.sol. The UI should enable a user to:
 Deploy a new BasicDutchAuction and specify all the parameters for its constructor.
@@ -103,7 +107,7 @@ cd frontend
 yarn install
 yarn start
 
-Version 7.0
+# Version 7.0
 Deploy your Version 6.0 dapp on an Ethereum testnet.
 This step will require getting test eth from a faucet.
 Sometimes these faucets can be unreliable so you’ll have to keep searching online for a faucet that gives you enough eth to successfully deploy your contract.
