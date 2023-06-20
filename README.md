@@ -34,7 +34,7 @@ The initial price of the item is derived from reservePrice, numBlocksAuctionOpen
 A bid can be submitted by either an externally-owned account or a contract account.
 The first bid processed by the contract that sends wei greater than or equal to the current price is the  winner. The wei should be transferred immediately to the seller and the contract should not accept  any more bids. All bids besides the winning bid should be refunded immediately. 
 
-#Version 2.0
+# Version 2.0
 Read the ERC721 EIP and OpenZeppellin implementation.
 Create a new directory in your Github repo called v2.0 and initialize a new hardhat project.
 Copy over any files you can reuse from the previous versions of this project into the directory for this version.
