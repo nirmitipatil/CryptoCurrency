@@ -1,6 +1,5 @@
 {
   "name": "v6.0",
-  "homepage": ".",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
